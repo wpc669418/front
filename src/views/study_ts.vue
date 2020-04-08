@@ -5,8 +5,6 @@
 <script>
 export default {
   mounted () {
-    const hello = 'Hello World!'
-    console.log(hello)
   }
 }
 </script>

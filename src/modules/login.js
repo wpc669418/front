@@ -9,7 +9,7 @@ const getCode = async () => {
       return result.data
     }
   } catch (e) {
-    console.log(e)
+    // console.log(e)
   }
   return result
 }
@@ -24,7 +24,8 @@ const forget = async (option) => {
       return result.data
     }
   } catch (e) {
-    console.log(e)
+    // console.log(e)
+
   }
   return result
 }
