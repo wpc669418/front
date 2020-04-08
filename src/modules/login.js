@@ -26,5 +26,4 @@ const forget = async (option) => {
   return result
 }
 
-
 export { getCode, forget }
