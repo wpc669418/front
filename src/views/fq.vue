@@ -136,7 +136,6 @@ export default {
         }
         this.lastList.push(cutItem)
       }
-      console.log(this.firstList, this.lastList)
     },
     _creatAddPrice (price, charge, profit, num) {
       return (

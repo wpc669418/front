@@ -127,7 +127,6 @@ export default {
         username: this.username,
         code: this.code
       })
-      console.log(res)
     }
   }
 }

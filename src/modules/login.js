@@ -5,11 +5,9 @@ const getCode = async () => {
   try {
     result = await axios.get('/getCaptcha')
     if (result.status === 200) {
-      // console.log(result)
       return result.data
     }
   } catch (e) {
-    // console.log(e)
   }
   return result
 }
@@ -20,16 +18,13 @@ const forget = async (option) => {
       ...option
     })
     if (result.status === 200) {
-      // console.log(result)
       return result.data
     }
   } catch (e) {
-    // console.log(e)
 
   }
   return result
 }
 
-console.log(getCode())
 
 export { getCode, forget }
