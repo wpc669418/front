@@ -12,7 +12,7 @@ Vue.use(ElementUI)
 Vue.config.productionTip = false
 axios.defaults.baseURL = process.env.NODE_ENV !== 'production' ? 'http://localhost:3000' : 'http://my.domain.com'
 
-const vue = new Vue({
+new Vue({
   router,
   store,
   render: h => h(App)

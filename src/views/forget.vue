@@ -123,7 +123,7 @@ export default {
       this.svg = res.data
     },
     async submit () {
-      const res = await forget({
+      await forget({
         username: this.username,
         code: this.code
       })
