@@ -1,31 +1,31 @@
 <template>
   <div style="padding:30px">
     <el-row :gutter="20">
-      <el-col :span="4">
+      <el-col :xs="8" :sm="8" :md="4">
         <div>
           <span style="width:200px">当前价格</span>
           <el-input v-model="price" placeholder="当前价格"></el-input>
         </div>
       </el-col>
-      <el-col :span="4">
+      <el-col :xs="8" :sm="8" :md="4">
         <span style="width:200px">期望收益</span>
         <el-input v-model="profit" placeholder="期望收益">
           <span style="line-height:40px;color:red;" slot="suffix">%</span>
         </el-input>
       </el-col>
-      <el-col :span="4">
+      <el-col :xs="8" :sm="8" :md="4">
         <span style="width:200px">智能数量</span>
         <el-input v-model="amount" placeholder="智能数量"></el-input>
       </el-col>
-      <el-col :span="4">
+      <el-col :xs="8" :sm="8" :md="4">
         <span style="width:200px">间隔差值</span>
         <el-input v-model="interval" placeholder="间隔差值"></el-input>
       </el-col>
-      <el-col :span="4">
+      <el-col :xs="8" :sm="8" :md="4">
         <span style="width:200px">阵长</span>
         <el-input v-model="step" placeholder="阵长"></el-input>
       </el-col>
-      <el-col :span="4">
+      <el-col :xs="8" :sm="8" :md="4">
         <span style="width:200px">手续费</span>
         <el-input v-model="charge" placeholder="手续费">
           <span style="line-height:40px;color:red;" slot="suffix">%</span>
@@ -36,7 +36,7 @@
     <el-button size="medium " style="margin:20px 0;" type="primary" @click="create">生成</el-button>
 
     <el-row :gutter="20">
-      <el-col :span="12">
+      <el-col :xs="24" :sm="24" :md="12" >
         <el-table stripe :data="firstList" style="width: 100%">
           <el-table-column label="涨盘">
             <el-table-column prop="inPrice" label="入" ></el-table-column>
@@ -47,7 +47,7 @@
           </el-table-column>
         </el-table>
       </el-col>
-      <el-col :span="12">
+      <el-col :xs="24" :sm="24" :md="12" >
         <el-table stripe :data="lastList" style="width: 100%">
           <el-table-column label="跌盘">
             <el-table-column prop="inPrice" label="入" ></el-table-column>
@@ -175,5 +175,10 @@ export default {
 
 .el-table .success-row {
   background: #f0f9eb;
+}
+@media screen and (max-width: 300px) {
+    body {
+        background-color:lightblue;
+    }
 }
 </style>
